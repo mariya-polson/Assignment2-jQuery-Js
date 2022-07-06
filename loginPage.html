@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="loginPage.css" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <!-- -----------------------------left section ----------------------------------->
+      <div class="container-1">
+        <div class="container1-2">
+          <p class="p1">Our Philosophy</p>
+          <p class="p2">Attention. Always.</p>
+          <img class="aspire-logo" src="Image 56.png" alt="aspirelogo" />
+        </div>
+      </div>
+      <!-- ----------------------------right section-------------------- -->
+      <div class="container-2">
+        <h2>Hello!</h2>
+        <p>Employee Portal Login</p>
+        <div class="container2-1">
+          <label id="user" for="uname">Username</label><br />
+          <input
+            id="usernames"
+            type="text"
+            class="login-text-input"
+            placeholder="Ramesh.kanniyappan@aspiresys.com "
+            name="uname"
+            required
+          /><br />
+          <span id="usercheck"></span>
+          <label id="pswd" for="psw">Password</label><br />
+          <input
+            id="password"
+            class="login-pswd-input"
+            type="password"
+            placeholder="***************"
+            name="psw"
+            required
+          />
+          <span id="passcheck"></span>
+        </div>
+        <br /><br />
+        <label class="chckbox">
+          <input type="checkbox" class="login-checkbox" name="remember" />
+          Remember me
+        </label>
+        <span class="psw">Forgot password?</span>
+        <button
+          class="login"
+          type="submit"
+          onclick="location.href='sample.html'"
+        >
+          Sign In
+        </button>
+        <span class="sign-up"
+          >Don’t have an account?&nbsp;<a href="signUp.html">Sign Up</a></span
+        >
+      </div>
+    </div>
+    <script src="loginPage.js"></script>
+  </body>
+</html>

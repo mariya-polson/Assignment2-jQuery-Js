@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  background-image: url("Group\ 233.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  font-family: Poppins, sans-serif;
+}
+
+.flex-container {
+  margin: 0 auto;
+  margin-top: 45px;
+  width: 62%;
+  height: 567px;
+  background: #ffffff;
+  overflow: hidden;
+  display: flex;
+  flex: 1 1 100%;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+@media (max-width: 980px) {
+  .flex-container {
+    flex-flow: wrap;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+.flex-container div {
+  height: auto;
+}
+
+.flex-container .container-1 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("Group\ 232.png");
+  overflow: hidden;
+  width: 50%;
+}
+
+.flex-container .container-1 .container1-2 {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.flex-container .container-1 .container1-2 .p1 {
+  color: white;
+  top: 348px;
+  left: 101px;
+  font-weight: 900;
+  font-size: 2.75rem;
+  margin-top: 208px;
+}
+.flex-container .container-1 .container1-2 .p2 {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: -52px;
+}
+.flex-container .container-1 .container1-2 .aspire-logo {
+  margin-top: 72px;
+}
+
+.flex-container .container-2 {
+  padding: 74px;
+  overflow: hidden;
+  width: 35%;
+}
+@media (max-width: 980px) {
+  .flex-container .container-2 {
+    width: 100%;
+  }
+}
+.flex-container .container-2 img {
+  width: 72%;
+  margin-left: 44px;
+}
+.flex-container .container-2 h2 {
+  font-size: 23px;
+  text-align: center;
+  line-height: 0;
+}
+.flex-container .container-2 p {
+  font-size: 13px;
+  text-align: center;
+  color: #b0b3b9;
+}
+.flex-container .container-2 button {
+  float: left;
+  color: #fff;
+  width: 51%;
+  height: 8%;
+  margin-top: 19px;
+  font-size: 13px;
+  margin-left: 69px;
+  padding: 12px 35px;
+  background: transparent linear-gradient(248deg, #501769 0%, #382780 100%) 0%
+    0% no-repeat padding-box;
+  border: 0;
+  border-color: transparent;
+}
