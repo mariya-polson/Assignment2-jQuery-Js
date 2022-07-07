@@ -1,5 +1,6 @@
 var uservalidate=false;
 var passvalidate=false;
+// Calling the user and password validation function 
 function validation(){
 this.userValidation()
  this.passwordValidation()
@@ -7,6 +8,8 @@ this.userValidation()
     window.location.href="sample.html"
  }
 }
+
+// User Validation
 function userValidation(){
     var userlength =document.getElementById("username").value.length;
 
@@ -22,6 +25,8 @@ function userValidation(){
             document.getElementById("usercheck").style.display='none'
         }
 }
+
+// Password Validation
 function passwordValidation(){
     var passlength =document.getElementById("password").value.length;
      if((passlength < 5 && passlength>0)|| (passlength > 12)){
