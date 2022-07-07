@@ -25,14 +25,15 @@
         <div class="container2-1">
           <label id="user" for="uname">Username</label><br />
           <input
-            id="usernames"
+            id="username"
             type="text"
             class="login-text-input"
             placeholder="Ramesh.kanniyappan@aspiresys.com "
             name="uname"
             required
           /><br />
-          <span id="usercheck"></span>
+          <span id="usercheck">**username must be between 3 & 10</span>
+          <span id="usercheck-none">**username required</span>
           <label id="pswd" for="psw">Password</label><br />
           <input
             id="password"
@@ -42,7 +43,8 @@
             name="psw"
             required
           />
-          <span id="passcheck"></span>
+          <span id="passcheck">**password must be between 5 & 12</span>
+          <span id="passcheck-none">**password required</span>
         </div>
         <br /><br />
         <label class="chckbox">
@@ -50,11 +52,7 @@
           Remember me
         </label>
         <span class="psw">Forgot password?</span>
-        <button
-          class="login"
-          type="submit"
-          onclick="location.href='sample.html'"
-        >
+        <button class="login" type="submit" onclick="validation()">
           Sign In
         </button>
         <span class="sign-up"
@@ -62,6 +60,6 @@
         >
       </div>
     </div>
-    <script src="loginPage.js"></script>
+    <script src="login.js"></script>
   </body>
 </html>
