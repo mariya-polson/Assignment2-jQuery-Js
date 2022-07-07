@@ -94,11 +94,24 @@ body {
 .flex-container .container-2 .container2-1 #usercheck {
   font-size: 10px;
   color: red;
+  display: none;
+}
+.flex-container .container-2 .container2-1 #usercheck-none {
+  font-size: 10px;
+  color: red;
+  display: none;
 }
 .flex-container .container-2 .container2-1 #passcheck {
   font-size: 10px;
   color: red;
   margin-top: 0;
+  display: none;
+}
+.flex-container .container-2 .container2-1 #passcheck-none {
+  font-size: 10px;
+  color: red;
+  margin-top: 0;
+  display: none;
 }
 .flex-container .container-2 #pswd {
   font-size: 13px;
