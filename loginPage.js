@@ -1,51 +1,38 @@
-// Document is ready
-$(document).ready(function () {
-    // Validate Username
-    $("#usercheck").hide();
-    let usernameError = true;
-    $("#usernames").keyup(function () {
-      validateUsername();
-    });
-   
-    function validateUsername() {
-      let usernameValue = $("#usernames").val();
-      if (usernameValue.length == "") {
-        $("#usercheck").show();
-        $("#usercheck").html("**Username required");
-        usernameError = false;
-        return false;
-      } else if (usernameValue.length < 5 || usernameValue.length > 12) {
-        $("#usercheck").show();
-        $("#usercheck").html("**length of username must be between 3 and 10");
-        usernameError = false;
-        return false;
-      } else {
-        $("#usercheck").hide();
-      }
-    }
-     // Validate Password
-     $("#passcheck").hide();
-     let passwordError = true;
-     $("#password").keyup(function () {
-       validatePassword();
-     });
-     function validatePassword() {
-       let passwordValue = $("#password").val();
-       if (passwordValue.length == "") {
-       $("#passcheck").show();
-       passwordError = false;
-       return false;
-       }
-       if (passwordValue.length < 3 || passwordValue.length > 10) {
-       $("#passcheck").show();
-       $("#passcheck").html(
-         "**length of your password must be between 3 and 10"
-       );
-       $("#passcheck").css("color", "red");
-       passwordError = false;
-       return false;
-       } else {
-       $("#passcheck").hide();
-       }
-     }
-})
+var uservalidate=false;
+var passvalidate=false;
+function validation(){
+this.userValidation()
+ this.passwordValidation()
+ if(uservalidate==true && passvalidate==true){
+    window.location.href="sample.html"
+ }
+}
+function userValidation(){
+    var userlength =document.getElementById("username").value.length;
+
+    if((userlength < 3 && userlength>0) || (userlength > 10)){
+        document.getElementById("usercheck").style.display='block'
+        document.getElementById("usercheck-none").style.display='none'
+        }
+        else if(userlength > 2 && userlength < 11){  
+            uservalidate =true;
+        }
+        else { 
+            document.getElementById("usercheck-none").style.display='block'
+            document.getElementById("usercheck").style.display='none'
+        }
+}
+function passwordValidation(){
+    var passlength =document.getElementById("password").value.length;
+     if((passlength < 5 && passlength>0)|| (passlength > 12)){
+        document.getElementById("passcheck").style.display='block'
+        document.getElementById("passcheck-none").style.display='none'
+        }
+        else if(passlength > 4 && passlength < 13){  
+            passvalidate =true;
+        }
+        else { 
+            document.getElementById("passcheck-none").style.display='block'
+            document.getElementById("passcheck").style.display='none'
+        }
+}
